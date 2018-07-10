@@ -1,0 +1,8 @@
+
+Mastermind
+----------
+
+Mastermind o Master Mind es un juego de descifrar códigos para dos
+jugadores. El juego moderno con clavijas fue inventado en 1970 por
+Mordecai Meirowitz, un jefe de correos israelí y experto en
+telecomunicaciones.
