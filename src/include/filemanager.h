@@ -1,6 +1,6 @@
 void showTextFile(const char *filePath) {
     FILE *textFile = fopen(filePath, "rt");
-    if (textFile != NULL) {
+    if (textFile) {
         char *character = (char *)malloc(sizeof(char));
         while ((*character = fgetc(textFile)) != EOF) {
             printf("%c", *character);
