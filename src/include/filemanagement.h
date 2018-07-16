@@ -1,11 +1,12 @@
+#include <stdio.h>
+
 void showTextFile(const char *filePath) {
     FILE *textFile = fopen(filePath, "rt");
     if (textFile) {
-        char *character = (char *)malloc(sizeof(char));
-        while ((*character = fgetc(textFile)) != EOF) {
-            printf("%c", *character);
+        char characterToRead;
+        while ((characterToRead = fgetc(textFile)) != EOF) {
+            printf("%c", characterToRead);
         }
-        free(character);
         fclose(textFile);
     } else {
         printf("\n");
