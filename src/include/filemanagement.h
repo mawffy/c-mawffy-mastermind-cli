@@ -3,9 +3,9 @@
 void showTextFile(const char *filePath) {
     FILE *textFile = fopen(filePath, "rt");
     if (textFile) {
-        char characterToRead;
-        while ((characterToRead = fgetc(textFile)) != EOF) {
-            printf("%c", characterToRead);
+        char c;
+        while ((c = fgetc(textFile)) != EOF) {
+            printf("%c", c);
         }
         fclose(textFile);
     } else {
